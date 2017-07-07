@@ -21,11 +21,13 @@
 	                                <hr class="right">
 	                            </div>
 	                        </div>
-			                <input class="form-control" type="text" placeholder="E-mail address">
-			                <input class="form-control" type="password" placeholder="Password">
-			                <div class="action">
-			                    <a class="btn btn-primary signup" href="index.html">Login</a>
-			                </div>                
+	                        <form  method="POST" action="{{ url_for('login') }}">
+				                <input class="form-control" name="email" type="email" placeholder="E-mail address">
+				                <input class="form-control" name="password" type="password" placeholder="Password">
+				                <div class="action">
+				                    <button  type="submit" class="btn btn-primary signup">Login</button>
+				                </div> 
+			                </form>               
 			            </div>
 			        </div>
 
