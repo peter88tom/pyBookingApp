@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+// date
+$(".eventdate").datepicker({
+   format:'yyyy-mm-dd'
+});
+
 
   $(".submenu > a").click(function(e) {
     e.preventDefault();
